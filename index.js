@@ -35,7 +35,7 @@ function shorterUrl() {
 copyBtn.addEventListener("click", copyUrl);
 
 function copyUrl() {
-  let copyText = shorterLink.value;
+  let copyText = shorterLink.innerHTML;
   navigator.clipboard.writeText(copyText);
 
   if (copyBtn.innerHTML === "Copy") {
