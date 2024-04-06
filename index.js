@@ -10,7 +10,7 @@ generateBtn.addEventListener("click", shorterUrl);
 
 function shorterUrl() {
   let url = inputLink.value;
-  fetch(`https://api.shrtco.de/v2/shorten?url=${url}`)
+  fetch(`https://cleanuri.com/api/v1/shorten?url=${url}`)
     .then(data => data.json())
     .then(obj => {
       if (inputLink.value === "") {
